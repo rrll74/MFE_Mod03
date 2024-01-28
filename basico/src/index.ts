@@ -3,7 +3,7 @@ import classes from "./mystyles.scss";
 
 // Insertamos texto en el div y le asignamos la clase del scss modularizado en tiempo de ejecución
 const texto = document.getElementById("text");
-texto.setAttribute("class", classes.redBackground);
+texto.setAttribute("class", classes.coloredBackground);
 texto.textContent = "Hello World!";
 
 // Insertamos la imagen en el contenedor div en tiempo de ejecución
