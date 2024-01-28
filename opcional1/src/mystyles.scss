@@ -1,0 +1,36 @@
+@font-face {
+  font-family: raleway;
+  src: url("./fonts/Raleway/static/Raleway-Medium.ttf");
+}
+
+$font-size-root: 16px;
+$back-color: lightblue;
+$border-color: grey;
+$aire: 4px;
+$img-width: 150px;
+
+* {
+  box-sizing: border-box;
+  font-size: $font-size-root;
+}
+
+div {
+  font-family: raleway, Georgia, "Times New Roman", Times, serif;
+
+  &.colored-background {
+    border: 2px solid $border-color;
+    background-color: $back-color;
+    padding: $aire;
+  }
+
+  & img {
+    width: $img-width;
+  }
+}
+
+:global(div#imgContainer) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $aire * 4;
+}
